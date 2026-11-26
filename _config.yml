@@ -1,0 +1,14 @@
+title: soulism
+lang: de
+url: "https://soulism.de"
+
+include:
+  - .htaccess
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .ruby-version
+
+port: 4001
