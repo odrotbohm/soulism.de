@@ -6,8 +6,12 @@ url: "https://soulism.de"
 # GitHub-Repository (owner/name), für den Link auf den Build-Stand im Footer
 repository: odrotbohm/soulism.de
 
-include:
-  - .htaccess
+# Favicon-Set aus assets/favicons/<name>/, pro Seite überschreibbar
+defaults:
+  - scope:
+      path: ""
+    values:
+      favicon: soulism
 
 exclude:
   - Gemfile

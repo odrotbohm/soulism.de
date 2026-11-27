@@ -1,4 +1,0 @@
-RewriteEngine On
-
-# Startseite auf /studio/ weiterleiten (vorübergehend, daher 302)
-RewriteRule ^$ /studio/ [R=302,L]
