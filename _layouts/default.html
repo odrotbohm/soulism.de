@@ -9,5 +9,12 @@
 </head>
 <body>
   {{ content }}
+  <footer class="site-footer">
+    {{ site.time | date: "%d.%m.%Y, %H:%M" }}
+    {%- if site.data.hash and site.data.hash != "" %} ·
+      {% if site.repository %}<a href="https://github.com/{{ site.repository }}/tree/{{ site.data.hash }}"><code>{{ site.data.hash }}</code></a>
+      {%- else %}<code>{{ site.data.hash }}</code>{% endif %}
+    {%- endif %}
+  </footer>
 </body>
 </html>

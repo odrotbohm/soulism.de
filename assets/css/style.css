@@ -19,15 +19,20 @@
 
 html, body {
   margin: 0;
-  height: 100%;
   background: #000;
   color: #f4f1ea;
   font-family: "Outfit", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.poster {
+body {
   min-height: 100vh;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,4 +73,25 @@ html, body {
 
 .contact a:hover {
   opacity: 0.7;
+}
+
+.site-footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.4;
+}
+
+.site-footer code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
